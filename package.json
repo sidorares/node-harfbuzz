@@ -1,0 +1,27 @@
+{
+  "name": "harfbuzz",
+  "version": "1.0.0",
+  "description": "harfbuzz bindings",
+  "keywords": [
+    "harfbuzz",
+    "complex scripts",
+    "typography",
+    "font rendering",
+    "glyphs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidorares/node-harfbuzz"
+  },
+  "author": "Andrey Sidorov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericfreese/node-freetype2/issues"
+  },
+  "homepage": "https://github.com/ericfreese/node-freetype2",
+  "main": "index.js",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.0.9"
+  }
+}
