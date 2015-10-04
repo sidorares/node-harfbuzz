@@ -1,0 +1,14 @@
+{
+  "name": "harfbuzz-example",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js /Library/Fonts/Arial.ttf test"
+  },
+  "author": "Andrey Sidorov <sidorares@yandex.ru>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "freetype2": "sidorares/node-freetype2.git#face-handle"
+  }
+}
