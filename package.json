@@ -1,6 +1,6 @@
 {
   "name": "harfbuzz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "harfbuzz bindings",
   "keywords": [
     "harfbuzz",
