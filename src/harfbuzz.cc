@@ -20,26 +20,11 @@ NAN_METHOD(Shape) {
   String::Utf8Value ftHandle(info[0]->ToString());
   String::Utf8Value input(info[1]->ToString());
 
-  //FT_Library ft_library;
-  //FT_Init_FreeType(&ft_library);
-  //FT_Face ft_face;
-  //FT_New_Face(ft_library, "/Library/Fonts/Georgia.ttf", 0, &ft_face);
-  //FT_New_Face(ft_library, "amiri-regular.ttf", 0, &ft_face);
-
-  int ptSize = 50*64;
-  int device_hdpi = 72;
-  int device_vdpi = 72;
-
-  //FT_Set_Char_Size(ft_face, 0, ptSize, device_hdpi, device_vdpi );
-
-
   std::stringstream ss;
   ss << std::hex << *ftHandle;
   unsigned long ptr;
   ss >> ptr;
   FT_Face ft_face = reinterpret_cast<FT_Face>(ptr);
-
-  FT_Set_Char_Size(ft_face, 0, ptSize, device_hdpi, device_vdpi );
 
   hb_buffer_t *buf = hb_buffer_create();
   hb_font_t *hb_ft_font = hb_ft_font_create(ft_face, NULL);
