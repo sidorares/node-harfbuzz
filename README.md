@@ -1,5 +1,7 @@
 # node-harfbuzz
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sidorares/node-harfbuzz.svg)](https://greenkeeper.io/)
+
 node.js [harfbuzz](https://github.com/behdad/harfbuzz) bindings
 
 # Example
